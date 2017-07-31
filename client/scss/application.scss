@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+@import
+  "vendor/vendor",
+  "vamp/vamp";
+
+* {
+  box-sizing: border-box;
+}
+html {
+  text-size-adjust: 100%;
+  font-size: 16px;
+  font-weight: 400;
+}
+body {
+  font-family: 'usual', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background-color: $black;
+  color: $white;
+}
+img {
+  display: block;
+}
+input, button, textarea {
+  font-size: 1rem;
+  font-family: 'usual', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+}
+input[type="text"], button, textarea {
+  outline: none;
+  appearance: none;
+  border: none;
+  background: none;
+  color: $white;
+}
+button {
+  cursor: pointer;
+  text-align: center;
+}
+::-webkit-input-placeholder {
+  color: $gray;
+}
+::-moz-placeholder {
+  color: $gray;
+}
+:-ms-input-placeholder {
+  color: $gray;
+}
+:-moz-placeholder {
+  color: $gray;
+}
+strong {
+  font-weight: 700;
+}
+a {
+  color: $white;
+  text-decoration: none;
+}
+
+.four-oh-four {
+  background-color: $black;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  h1 {
+    font-size: 10rem;
+    text-decoration: underline;
+    font-weight: 700;
+  }
+}

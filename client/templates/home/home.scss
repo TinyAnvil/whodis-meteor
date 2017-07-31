@@ -1,0 +1,107 @@
+@import "../../scss/vamp/vamp";
+
+.tweet-block {
+  background-color: $gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 7rem 1rem;
+
+  .twitter-tweet {
+    margin: 0 !important;
+    box-shadow: 0 7px 14px rgba($black, 0.2), 0 3px 6px rgba($black, 0.2);
+    max-width: 30rem;
+
+    .no-script {
+      background-color: $white;
+      color: $black;
+      padding: 1rem;
+      border-radius: $radius;
+      line-height: 1.5;
+    }
+    a {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+
+  @include breakpoint($phone) {
+    padding: 1rem 1rem 5rem;
+  }
+}
+.logo-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  position: relative;
+  margin-top: -50px;
+  z-index: 1;
+
+  img {
+    width: 100px;
+  }
+}
+.content-block {
+  text-align: center;
+  padding: 3rem 1rem 10rem;
+
+  h1, h2, h3, .download {
+    font-family: 'alternate-gothic-no-3-d', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  h1 {
+    font-size: 5rem;
+    margin-bottom: 1rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+    max-width: 35rem;
+    margin: 0 auto;
+    border-top: 1px solid $gray;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+
+    span {
+      color: $blue;
+    }
+  }
+  h3 {
+    font-size: 1.5rem;
+    margin: 4rem 0 2rem;
+  }
+  p {
+    max-width: 35rem;
+    margin: 0 auto;
+    line-height: 1.5;
+  }
+  a {
+    text-decoration: underline;
+  }
+  .download {
+    background-color: $green;
+    color: $black;
+    text-decoration: none;
+    padding: 1.1rem 2rem 1rem;
+    font-size: 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    width: auto;
+    box-shadow: 0 7px 14px rgba(black, 0.2), 0 3px 6px rgba(black, 0.2);
+    transition: all 200ms;
+    transform: translate(0, 0);
+
+    &:hover {
+      transform: translate(0, -2px);
+      box-shadow: 0 6px 12px rgba(black, 0.3), 0 4px 18px rgba(black, 0.5), 0 0 0 3px $green;
+    }
+  }
+
+  @include breakpoint($phone) {
+    padding: 2rem 1rem 3rem;
+  }
+}
